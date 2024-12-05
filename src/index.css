@@ -87,10 +87,11 @@
   }
 
   .circle1{
-    margin-right: -60px;
+    
   }
 
   .circle1::after{
+    margin-right: -60px;
     content: '';
     width:60px;
     height:60px;
@@ -170,7 +171,7 @@
     position: relative;
     transform: rotate(330deg);
     top:-10px;
-    left:70%;  
+    left:50%;  
   }
 
 

@@ -39,11 +39,11 @@ function App() {
         setMenuVisibility(!menuVisibility);
     }
 
-    const scrollTo = (elementID:string) => {
-        if(menuVisibility){
+    const scrollTo = (elementID: string) => {
+        if (menuVisibility) {
             setMenuVisibility(false)
         }
-        document.getElementById(elementID)?.scrollIntoView({behavior:"smooth"})
+        document.getElementById(elementID)?.scrollIntoView({ behavior: "smooth" })
     }
 
     return (
@@ -53,11 +53,11 @@ function App() {
                     <div className="absolute top-[80px] left-0 right-0 pb-8 bg-white z-50">
                         <div className="flex flex-col justify-start px-20">
                             <div className="flex flex-col justify-start">
-                                <div onClick={()=>{scrollTo("realEstate")}} className="px-4 py-2 font-medium rounded-full text-base bg-white text-[#444444] hover:bg-[#4361EE4D] hover:cursor-pointer hover:text-[#2B2B2B] transition">Home</div>
-                                <div onClick={()=>{scrollTo("about")}} className="px-4 py-2 font-medium rounded-full text-base bg-white text-[#444444] hover:bg-[#4361EE4D] hover:cursor-pointer hover:text-[#2B2B2B] transition">About</div>
-                                <div onClick={()=>{scrollTo("listings")}} className="px-4 py-2 font-medium rounded-full text-base bg-white text-[#444444] hover:bg-[#4361EE4D] hover:cursor-pointer hover:text-[#2B2B2B] transition">Listings</div>
-                                <div onClick={()=>{scrollTo("services")}} className="px-4 py-2 font-medium rounded-full text-base bg-white text-[#444444] hover:bg-[#4361EE4D] hover:cursor-pointer hover:text-[#2B2B2B] transition">Services</div>
-                                <div onClick={()=>{scrollTo("blogs")}} className="px-4 py-2 font-medium rounded-full text-base bg-white text-[#444444] hover:bg-[#4361EE4D] hover:cursor-pointer hover:text-[#2B2B2B] transition">Blogs</div>
+                                <div onClick={() => { scrollTo("realEstate") }} className="px-4 py-2 font-medium rounded-full text-base bg-white text-[#444444] hover:bg-[#4361EE4D] hover:cursor-pointer hover:text-[#2B2B2B] transition">Home</div>
+                                <div onClick={() => { scrollTo("about") }} className="px-4 py-2 font-medium rounded-full text-base bg-white text-[#444444] hover:bg-[#4361EE4D] hover:cursor-pointer hover:text-[#2B2B2B] transition">About</div>
+                                <div onClick={() => { scrollTo("listings") }} className="px-4 py-2 font-medium rounded-full text-base bg-white text-[#444444] hover:bg-[#4361EE4D] hover:cursor-pointer hover:text-[#2B2B2B] transition">Listings</div>
+                                <div onClick={() => { scrollTo("services") }} className="px-4 py-2 font-medium rounded-full text-base bg-white text-[#444444] hover:bg-[#4361EE4D] hover:cursor-pointer hover:text-[#2B2B2B] transition">Services</div>
+                                <div onClick={() => { scrollTo("blogs") }} className="px-4 py-2 font-medium rounded-full text-base bg-white text-[#444444] hover:bg-[#4361EE4D] hover:cursor-pointer hover:text-[#2B2B2B] transition">Blogs</div>
                                 <div className='px-4 py-2 rounded-full text-[#2B2B2B] text-base font-medium hover:bg-[#F6F6F6] hover:cursor-pointer transition flex flex-row justify-center items-center'><CircleUserRound size={18} color="#2B2B2B" className="mr-2" />Login/Register</div>
                                 <div className='px-[26px] py-[15px] rounded-full bg-[#3A0CA3] text-white text-base font-medium hover:cursor-pointer transition flex flex-row justify-center items-center'> <HousePlus size={20} color="white" className="mr-2" />Add Listing</div>
                             </div>
@@ -75,11 +75,11 @@ function App() {
             </div>
             <div className="hidden md:grid grid-rows-1 grid-cols-[auto_1fr_auto] bg-white w-full h-[80px]   px-16">
                 <div className="flex justify-start items-center overflow-auto w-full z-20">
-                    <div onClick={()=>{scrollTo("realEstate")}} className="px-4 py-2 font-medium rounded-full text-base bg-white text-[#444444] hover:bg-[#4361EE4D] hover:cursor-pointer hover:text-[#2B2B2B] transition">Home</div>
-                    <div onClick={()=>{scrollTo("about")}} className="px-4 py-2 font-medium rounded-full text-base bg-white text-[#444444] hover:bg-[#4361EE4D] hover:cursor-pointer hover:text-[#2B2B2B] transition">About</div>
-                    <div onClick={()=>{scrollTo("listings")}} className="px-4 py-2 font-medium rounded-full text-base bg-white text-[#444444] hover:bg-[#4361EE4D] hover:cursor-pointer hover:text-[#2B2B2B] transition">Listings</div>
-                    <div onClick={()=>{scrollTo("services")}} className="px-4 py-2 font-medium rounded-full text-base bg-white text-[#444444] hover:bg-[#4361EE4D] hover:cursor-pointer hover:text-[#2B2B2B] transition">Services</div>
-                    <div onClick={()=>{scrollTo("blogs")}} className="px-4 py-2 font-medium rounded-full text-base bg-white text-[#444444] hover:bg-[#4361EE4D] hover:cursor-pointer hover:text-[#2B2B2B] transition">Blogs</div>
+                    <div onClick={() => { scrollTo("realEstate") }} className="px-4 py-2 font-medium rounded-full text-base bg-white text-[#444444] hover:bg-[#4361EE4D] hover:cursor-pointer hover:text-[#2B2B2B] transition">Home</div>
+                    <div onClick={() => { scrollTo("about") }} className="px-4 py-2 font-medium rounded-full text-base bg-white text-[#444444] hover:bg-[#4361EE4D] hover:cursor-pointer hover:text-[#2B2B2B] transition">About</div>
+                    <div onClick={() => { scrollTo("listings") }} className="px-4 py-2 font-medium rounded-full text-base bg-white text-[#444444] hover:bg-[#4361EE4D] hover:cursor-pointer hover:text-[#2B2B2B] transition">Listings</div>
+                    <div onClick={() => { scrollTo("services") }} className="px-4 py-2 font-medium rounded-full text-base bg-white text-[#444444] hover:bg-[#4361EE4D] hover:cursor-pointer hover:text-[#2B2B2B] transition">Services</div>
+                    <div onClick={() => { scrollTo("blogs") }} className="px-4 py-2 font-medium rounded-full text-base bg-white text-[#444444] hover:bg-[#4361EE4D] hover:cursor-pointer hover:text-[#2B2B2B] transition">Blogs</div>
                 </div>
                 <div className="flex  justify-center items-center h-full -ml-[50px] ">
                     <div className="rounded-full bg-[#3A0CA3] w-[50px] h-[50px] flex justify-center items-center">
@@ -113,7 +113,7 @@ function App() {
                     <div className="text-[#808080] font-normal text-base break-words mt-5">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley</div>
                     <div className="flex justify-center items-center mt-12 circle1">
                         <button className="carousel1-prev bg-white hover:bg-[#F6F6F6] rounded-full hover:cursor-pointer h-[40px] w-[40px] -mr-[20px] z-10 transition flex justify-center items-center"><ChevronLeft size={25} color="#AAAAAA" /></button>
-                        <Swiper className="w-full " init={false} 
+                        <Swiper className="w-full " init={false}
                             navigation={{ nextEl: '.carousel1-next', prevEl: '.carousel1-prev' }}
                             pagination={{
                                 clickable: true, el: '.pagination1', bulletActiveClass: "carousel1-paginationActive", bulletClass: "carousel1-pagination ", renderBullet: (_index, className) => {
@@ -234,7 +234,7 @@ function App() {
                     </div>
                 </div>
             </div>
-            
+
             <div id="listings" className='w-full flex flex-wrap px-6 pt-4  lg:pl-32'>
                 <div className="w-full flex flex-wrap  gap-5 lg:pr-32">
                     <div className='w-full lg:flex-1'>
@@ -830,7 +830,7 @@ function App() {
                             slidesPerView={1}
                         >
                             <SwiperSlide className="p-2">
-                                <div className='w-full max-w-[500px]  max-h-[360px] rounded-[30px] shadow-md px-[60px] py-[30px]'>
+                                <div className='w-full max-w-[500px]  max-h-[600px] rounded-[30px] shadow-md px-[30px] py-[30px]'>
                                     <h4 className='text-[#2B2B2B] font-medium text-lg'>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make</h4>
                                     <div className='border-[#D4D4D4] border-b-2 mt-8 mb-3'></div>
                                     <div className='flex flex-row justify-between items-center '>
@@ -855,7 +855,7 @@ function App() {
                                 </div>
                             </SwiperSlide>
                             <SwiperSlide className="p-2">
-                                <div className='w-full max-w-[500px]  max-h-[360px] rounded-[30px] shadow-md px-[60px] py-[30px]'>
+                                <div className='w-full max-w-[500px]  max-h-[600px] rounded-[30px] shadow-md px-[30px] py-[30px]'>
                                     <h4 className='text-[#2B2B2B] font-medium text-lg'>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make</h4>
                                     <div className='border-[#D4D4D4] border-b-2 mt-8 mb-3'></div>
                                     <div className='flex flex-row justify-between items-center '>
@@ -880,7 +880,7 @@ function App() {
                                 </div>
                             </SwiperSlide>
                             <SwiperSlide className="p-2">
-                                <div className='w-full max-w-[500px]  max-h-[360px] rounded-[30px] shadow-md px-[60px] py-[30px]'>
+                                <div className='w-full max-w-[500px]  max-h-[600px] rounded-[30px] shadow-md px-[30px] py-[30px]'>c
                                     <h4 className='text-[#2B2B2B] font-medium text-lg'>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make</h4>
                                     <div className='border-[#D4D4D4] border-b-2 mt-8 mb-3'></div>
                                     <div className='flex flex-row justify-between items-center '>
