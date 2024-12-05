@@ -1,0 +1,198 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.form-select {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAQCAYAAAAMJL+VAAAABGdBTUEAALGPC/xhBQAAAQtJREFUOBG1lEEOgjAQRalbGj2OG9caOACn4ALGtfEuHACiazceR1PWOH/CNA3aMiTaBDpt/7zPdBKy7M/DCL9pGkvxxVp7KsvyJftL5rZt1865M+Ucq6pyyF3hNcI7Cuu+728QYn/JQA5yKaempxuZmQngOwEaYx55nu+1lQh8GIatMGi+01NwBcEmhxBqK4nAPZJ78K0KKFAJmR3oPp8+Iwgob0Oa6+TLoeCvRx+mTUYf/FVBGTPRwDkfLxnaSrRwcH0FWhNOmrkWYbE2XEicqgSa1J0LQ+aPCuQgZiLnwewbGuz5MGoAhcIkCQcjaTBjMgtXGURMVHC1wcQEy0J+Zlj8bKAnY1/UzDe2dbAVqfXn6wAAAABJRU5ErkJggg==');
+    background-size: 0.7rem;
+    background-position: right 0.7rem center;
+  }
+
+  .carousel1-pagination{
+    height: 4px;
+    background-color: #FFFFFF;
+    opacity: 0.5;
+    cursor: pointer;
+  }
+  .carousel1-paginationActive{
+    height:4px;
+    background-color: #4361EE;
+    opacity: 1 !important;
+  }
+
+  .propList::-webkit-scrollbar {
+    display: none;
+  }
+  .propList{
+    scroll-snap-type: x mandatory;
+  }
+  .propElement{
+    
+    scroll-snap-align: start;
+  }
+
+  .carousel2-pagination{
+    height: 4px;
+    background-color: #FFFFFF;
+    opacity: 0.5;
+    cursor: pointer;
+  }
+  .carousel2-paginationActive{
+    height:4px;
+    background-color: #FFFFFF;
+    opacity: 1 !important;
+  }
+
+  .carousel3-pagination{
+    height: 4px;
+    width: 2rem !important;
+    padding: 0px;
+    background-color: #AAAAAA;
+    opacity: 0.5;
+    cursor: pointer;
+  }
+  .carousel3-paginationActive{
+    height:4px;
+    background-color: #808080;
+    opacity: 1 !important;  
+  }
+
+  .pagination3{
+    transform: rotate(90deg) !important;
+  }
+
+  .backgroundShape:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 0% 0% 50% 50%;
+    background: linear-gradient(180deg, rgba(76, 201, 240, 0) 0%, rgba(67, 97, 238, 0.3) 100%);
+    z-index: -1;
+  }
+
+  .carousel4-pagination{
+    height: 4px;
+    background-color: #AAAAAA;
+    opacity: 0.5;
+    cursor: pointer;
+  }
+  .carousel4-paginationActive{
+    height:4px;
+    background-color: #808080;
+    opacity: 1 !important;  
+  }
+
+  .circle1{
+    margin-right: -60px;
+  }
+
+  .circle1::after{
+    content: '';
+    width:60px;
+    height:60px;
+    max-width:60px;
+    max-height:60px;
+    min-width:60px;
+    min-height:60px;
+    background: linear-gradient(180deg, #4361EE 0%, rgba(67, 97, 238, 0) 100%);
+    display: inline-block;
+    border-radius: 60px;
+    position: relative;
+    transform: rotate(30deg);
+    left:-50px;
+    top:-170px;
+  }
+
+  .circle2{
+
+  }
+  
+  .circle2::before{
+    content: '';
+    width:100px;
+    height:100px;
+    max-width:100px;
+    max-height:100px;
+    min-width:100px;
+    min-height:100px;
+    background: linear-gradient(180deg, #4361EE 0%, rgba(67, 97, 238, 0) 100%);
+    display: inline-block;
+    border-radius: 100px;
+    position: relative;
+    transform: rotate(330deg);
+    top:-50px;
+    left:30px;
+  }
+
+  .circle3{
+    height: 0px;
+  }
+  
+  .circle3::before{
+    content: '';
+    width:60px;
+    height:60px;
+    max-width:60px;
+    max-height:60px;
+    min-width:60px;
+    min-height:60px;
+    background: linear-gradient(180deg, #4361EE 0%, rgba(67, 97, 238, 0) 100%);
+    display: inline-block;
+    border-radius: 60px;
+    position: relative;
+    transform: rotate(30deg);
+    top:-50px;
+    left:60px;
+    opacity: 50%;
+  }
+
+
+  .circle4{
+    height: 0px;
+  }
+  
+  .circle4::after{
+    z-index: -1;
+    content: '';
+    width:100px;
+    height:100px;
+    max-width:100px;
+    max-height:100px;
+    min-width:100px;
+    min-height:100px;
+    background: linear-gradient(180deg, #4361EE 0%, rgba(67, 97, 238, 0) 100%);
+    display: inline-block;
+    border-radius: 100px;
+    position: relative;
+    transform: rotate(330deg);
+    top:-10px;
+    left:70%;  
+  }
+
+
+  .circle5{
+    height: 0px;
+  }
+  
+  .circle5::before{
+    z-index: 0;
+    content: '';
+    width:60px;
+    height:60px;
+    max-width:60px;
+    max-height:60px;
+    min-width:60px;
+    min-height:60px;
+    background: linear-gradient(180deg, #4361EE 0%, rgba(67, 97, 238, 0) 100%);
+    display: inline-block;
+    border-radius: 60px;
+    position: relative;
+    transform: rotate(330deg);
+    opacity: 50%;
+    left:45%;
+    top: 120px;
+  }
